@@ -8,50 +8,53 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="my-site">
-    <header class="header my-site__header">
-        <button class="button-icon header__button-icon">
-            <img src="/img/burger.svg" alt="Меню" class="button-icon__img">
-        </button>
-        <div class="divider header__divider"></div>
-        <img src="/img/logo.svg" alt="CPS" class="header__logo">
-        <div class="contacts header__contacts">
-            <button class="button-icon contacts__button-icon">
-                <img src="/img/call.svg" alt="Заказать звонок" class="button-icon__img">
+    <section class="services-and-facilities my-site__services-and-facilities">
+        <header class="header services-and-facilities__header">
+            <button class="button-icon header__button-icon">
+                <img src="/img/burger.svg" alt="Меню" class="button-icon__img">
             </button>
-            <button class="button-icon contacts__button-icon">
-                <img src="/img/chat.svg" alt="Обратная связь" class="button-icon__img">
-            </button>
-            <button class="button-icon contacts__button-icon">
-                <img src="/img/profile.svg" alt="Профиль" class="button-icon__img">
-            </button>
-        </div>
-        <div class="divider header__divider"></div>
-        <button class="button-icon header__button-icon">
-            <img src="/img/repair.svg" alt="Оставить заявку" class="button-icon__img">
-        </button>
-        <button class="button-icon header__button-icon">
-            <img src="/img/status.svg" alt="Статус ремонта" class="button-icon__img">
-        </button>
-    </header>
-    <main class="main my-site__main">
-        <div class="title main__title">
-            <div class="title__hightlight"></div>
-            <h1 class="title__h1">Услуги и сервисы</h1>
-            <div class="settings title__settings">
-                <label for="title-button-repair" class="label settings__label">
-                    <span class="label__text">Оставить заявку</span>
-                    <button class="button-icon" id="title-button-repair">
-                        <img src="/img/repair.svg" alt="" class="button-icon__img">
-                    </button>
-                </label>
-                <label for="title-button-status" class="label settings__label">
-                    <span class="label__text">Статус ремонта</span>
-                    <button class="button-icon" id="title-button-status">
-                        <img src="/img/status.svg" alt="" class="button-icon__img">
-                    </button>
-                </label>
+            <div class="divider header__divider"></div>
+            <img src="/img/logo.svg" alt="CPS" class="header__logo">
+            <div class="contacts header__contacts">
+                <button class="button-icon contacts__button-icon">
+                    <img src="/img/call.svg" alt="Заказать звонок" class="button-icon__img">
+                </button>
+                <button class="button-icon contacts__button-icon">
+                    <img src="/img/chat.svg" alt="Обратная связь" class="button-icon__img">
+                </button>
+                <button class="button-icon contacts__button-icon">
+                    <img src="/img/profile.svg" alt="Профиль" class="button-icon__img">
+                </button>
             </div>
-        </div>
-    </main>
+            <div class="divider header__divider"></div>
+            <button class="button-icon header__button-icon">
+                <img src="/img/repair.svg" alt="Оставить заявку" class="button-icon__img">
+            </button>
+            <button class="button-icon header__button-icon">
+                <img src="/img/status.svg" alt="Статус ремонта" class="button-icon__img">
+            </button>
+        </header>
+        <main class="main services-and-facilities__main">
+            <div class="title main__title">
+                <div class="title__hightlight"></div>
+                <h1 class="title__h1">Услуги и сервисы</h1>
+                <div class="settings title__settings">
+                    <label for="title-button-repair" class="label settings__label">
+                        <span class="label__text">Оставить заявку</span>
+                        <button class="button-icon" id="title-button-repair">
+                            <img src="/img/repair.svg" alt="" class="button-icon__img">
+                        </button>
+                    </label>
+                    <label for="title-button-status" class="label settings__label">
+                        <span class="label__text">Статус ремонта</span>
+                        <button class="button-icon" id="title-button-status">
+                            <img src="/img/status.svg" alt="" class="button-icon__img">
+                        </button>
+                    </label>
+                </div>
+            </div>
+        </main>
+    </section>
+
 </body>
 </html>
