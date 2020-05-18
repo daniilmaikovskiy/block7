@@ -5,4 +5,10 @@
             display: none;
         }
     }
+    &__main {
+        margin-top: 24px;
+        @media (min-width: 1120px) {
+            margin-top: 32px;
+        }
+    }
 }

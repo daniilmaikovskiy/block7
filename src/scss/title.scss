@@ -1,0 +1,32 @@
+.title {
+    display: flex;
+    height: 40px;
+    width: 100%;
+
+    &__hightlight {
+        width: 4px;
+        height: 40px;
+        margin-right: 12px;
+        background-image: url(/img/hightlight.svg);
+        @media (min-width: 768px) {
+            margin-right: 20px;
+        }
+        @media (min-width: 1120px) {
+            margin-right: 32px;
+        }
+    }
+    &__h1 {
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -0.6px;
+        color: #1B1C21;
+        margin-right: auto;
+    }
+    &__settings {
+        display: none;
+        margin-right: 30px;
+        @media (min-width: 1120px) {
+            display: flex;
+        }
+    }
+}
