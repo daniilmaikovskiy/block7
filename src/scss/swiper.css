@@ -530,3 +530,9 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
+
+/* block7 styles */
+
+.swiper-slide {
+  width: auto;
+}

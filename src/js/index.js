@@ -1,5 +1,5 @@
 import '../scss/style.scss';
-import Swiper from 'swiper';
-import { addElement } from './helper.js';
+import { addSwiper, generateSwiperHTML } from './swiper-helper.js';
+import { SERVICES_AND_FACILITIES_SWIPER_SETTINGS } from './global-settings.js';
 
-let servicesAndFacilitiesSwiper = document.querySelector('#services-and-facilities');
+generateSwiperHTML(SERVICES_AND_FACILITIES_SWIPER_SETTINGS);
