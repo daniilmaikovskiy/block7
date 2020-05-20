@@ -8,10 +8,10 @@
         height: 40px;
         margin-right: 12px;
         background-image: url(/img/hightlight.svg);
-        @media (min-width: 768px) {
+        @media (min-width: $small-screen) {
             margin-right: 20px;
         }
-        @media (min-width: 1120px) {
+        @media (min-width: $middle-screen) {
             margin-right: 32px;
         }
     }
@@ -19,13 +19,13 @@
         font-size: 28px;
         line-height: 40px;
         letter-spacing: -0.6px;
-        color: #1B1C21;
+        color: $title__h1--color;
         margin-right: auto;
     }
     &__settings {
         display: none;
         margin-right: 30px;
-        @media (min-width: 1120px) {
+        @media (min-width: $middle-screen) {
             display: flex;
         }
     }

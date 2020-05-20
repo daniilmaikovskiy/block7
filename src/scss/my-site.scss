@@ -1,6 +1,6 @@
 .my-site {
     &__services-and-facilities {
-        @media (min-width: 1120px) {
+        @media (min-width: $middle-screen) {
             padding-top: 32px;
         }
     }

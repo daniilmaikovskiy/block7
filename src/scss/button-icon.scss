@@ -3,8 +3,9 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #FF3E79;
-    transition: all 0.3s ease;
+    background-color: $button-icon--background;
+    transition: all 0.6s ease;
+    outline: none;
 
     &__img {
         margin: auto;
