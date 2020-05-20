@@ -1,7 +1,7 @@
 import { addElement } from './helper.js';
 import Swiper from 'swiper';
 
-export const addSwiper = (swiperContainerSelector, swiperSettings) => {
+export const addSwiper = (settings) => {
     const breakpoint = window.matchMedia( '(min-width:768px)' );
     let mySwiper;
 
@@ -23,7 +23,7 @@ export const addSwiper = (swiperContainerSelector, swiperSettings) => {
     };
 
     function enableSwiper() {
-        mySwiper = new Swiper (swiperContainerSelector, swiperSettings);
+        mySwiper = new Swiper (settings.containerSelector, settings.objectSettings);
     };
 }
 
@@ -31,9 +31,12 @@ export const generateSwiperHTML = (settings) => {
 
   let swiperContainer = document.querySelector(settings.containerSelector);
   let swiperWrapper = addElement(swiperContainer, 'swiper-wrapper');
+  let swiperSlides = [];
 
   for (let i = 0; i < settings.elementsData.length; i++) {
     let swiperSlide = addElement(swiperWrapper, 'swiper-slide');
-    settings.addElementMethod(swiperSlide, settings.elementsData[i]);
+    swiperSlides.push(swiperSlide);
   }
+
+  settings.addElements(swiperSlides);
 }

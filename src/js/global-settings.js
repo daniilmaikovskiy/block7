@@ -3,9 +3,8 @@ import { addElement } from './helper.js';
 const IMG_PATH = '/img/';
 
 export const SERVICES_AND_FACILITIES_SWIPER_SETTINGS = {
-  mainSettings: {
+  objectSettings: {
     slidesPerView: 'auto',
-    spaceBetween: 16,
     slidesOffsetBefore: 16,
 
     a11y: true,
@@ -22,10 +21,36 @@ export const SERVICES_AND_FACILITIES_SWIPER_SETTINGS = {
   ],
   elementClass: 'button',
   containerSelector: '#services-and-facilities',
-  addElementMethod: (function (swiperSlide, elementData) {
-    let element = addElement(swiperSlide, this.elementClass);
-    element.textContent = elementData;
+  activeIndex: 0,
+  addElements: (function (swiperSlides) {
+    let elements = [];
+    let activeIndex = this.activeIndex;
+    let elementClass = this.elementClass;
+
+    for (let i = 0; i < this.elementsData.length; i++) {
+      let classes = [elementClass];
+
+      if (i === activeIndex) {
+        classes.push(elementClass + '--active');
+      }
+
+      let element = addElement(swiperSlides[i], classes);
+      let elementText = addElement(element, elementClass + '__text', 'span');
+
+      elementText.textContent = this.elementsData[i];
+
+      (function (element, i) {
+        element.addEventListener('click', function () {
+          if (i !== activeIndex) {
+            elements[activeIndex].classList.remove(elementClass + '--active');
+
+            activeIndex = i;
+            elements[i].classList.add(elementClass + '--active');
+          }
+        });
+      })(element, i);
+
+      elements.push(element);
+    }
   }),
 };
-
-Object.freeze(SERVICES_AND_FACILITIES_SWIPER_SETTINGS);

@@ -2,8 +2,6 @@
   display: inline-block;
   height: 40px;
   background: #FFFFFF;
-  border: 2px solid #B8FFEC;
-  border-radius: 6px;
   padding: 9px 0;
 
   &__text {
@@ -11,5 +9,10 @@
     letter-spacing: -0.2px;
     color: #7E7E82;
     margin: 0 20px;
+  }
+
+  &--active {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
   }
 }
