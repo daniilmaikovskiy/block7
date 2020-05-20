@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
   height: 40px;
-  background: $button--background;
   padding: 9px 0;
+  background-color: inherit;
   transition: all 0.4s ease;
   border: 2px solid transparent;
   border-radius: 6px;
@@ -17,6 +17,7 @@
 
   &--active {
     border: $button--active--border;
+    background: $button--active--background;
   }
 
   &:focus, &:hover {

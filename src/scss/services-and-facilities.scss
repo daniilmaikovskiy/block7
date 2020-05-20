@@ -1,25 +1,61 @@
 .services-and-facilities {
-    background: $services-and-facilities--background;
+  background: $services-and-facilities--background;
+  overflow: hidden;
 
-    &__header {
-        box-shadow: 0 1px 0 0 #D9FFF5;
-        @media (min-width: $middle-screen) {
-            display: none;
-        }
+  &__header {
+    box-shadow: 0 1px 0 0 #D9FFF5;
+    @media (min-width: $middle-screen) {
+    display: none;
     }
-    &__main {
-        margin-top: 24px;
-        @media (min-width: $middle-screen) {
-            margin-top: 0;
-        }
+  }
+  &__main {
+    margin-top: 24px;
+    @media (min-width: $middle-screen) {
+      margin-top: 0;
     }
-    &__swiper {
-      margin-top: 24px;
-      @media (min-width: $small-screen) {
-        margin-left: 24px;
-      }
-      @media (min-width: $middle-screen) {
-        margin-left: 32px;
-      }
+  }
+  &__swiper {
+    margin-top: 24px;
+    @media (min-width: $small-screen) {
+      margin-left: 24px;
     }
+    @media (min-width: $middle-screen) {
+      margin-left: 32px;
+    }
+  }
+  &__info-and-picture-wrapper {
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    @media (min-width: $small-screen) {
+      flex-direction: row;
+      margin-left: 8px;
+    }
+    @media (min-width: $middle-screen) {
+      margin-left: 16px;
+    }
+  }
+  &__info {
+    @media (min-width: $small-screen) {
+      margin-right: 48px;
+    }
+  }
+  &__picture {
+    margin-top: 16px;
+    flex-shrink: 0;
+    align-self: center;
+    width: 100%;
+    max-width: 360px;
+    @media (min-width: $small-screen) {
+      width: 45%;
+      max-width: 500px;
+      margin: 0;
+    }
+  }
+  &__picture-img {
+    width: 100%;
+    height: auto;
+  }
 }
