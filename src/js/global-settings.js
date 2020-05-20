@@ -34,7 +34,7 @@ export const SERVICES_AND_FACILITIES_SWIPER_SETTINGS = {
         classes.push(elementClass + '--active');
       }
 
-      let element = addElement(swiperSlides[i], classes);
+      let element = addElement(swiperSlides[i], classes, 'button');
       let elementText = addElement(element, elementClass + '__text', 'span');
 
       elementText.textContent = this.elementsData[i];

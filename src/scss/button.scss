@@ -6,6 +6,7 @@
   transition: all 0.4s ease;
   border: 2px solid transparent;
   border-radius: 6px;
+  outline: none;
 
   &__text {
     font-size: 16px;
@@ -15,6 +16,10 @@
   }
 
   &--active {
-    border: 2px solid #B8FFEC;
+    border: $button--active--border;
+  }
+
+  &:focus, &:hover {
+    box-shadow: $button--focus--box-shadow;
   }
 }
