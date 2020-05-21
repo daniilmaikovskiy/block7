@@ -13,10 +13,10 @@
     letter-spacing: -0.2px;
     color: #1B1C21;
   }
-  &--active &__img {
+  &--active &__img, &:hover &__img, &:focus &__img {
     transform: rotate(180deg);
   }
-  &:hover &__img, &:focus &__img {
-    transform: rotate(180deg);
+  &--active:hover &__img, &--active:focus &__img {
+    transform: rotate(360deg);
   }
 }
