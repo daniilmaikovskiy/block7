@@ -11,7 +11,7 @@
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.2px;
-    color: #1B1C21;
+    color: $show-hide-button__text--color;
   }
   &--active &__img, &:hover &__img, &:focus &__img {
     transform: rotate(180deg);
