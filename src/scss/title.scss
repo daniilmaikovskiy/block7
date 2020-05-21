@@ -9,7 +9,7 @@
         @media (min-width: $small-screen) {
             margin-right: 20px;
         }
-        @media (min-width: $middle-screen) {
+        @media (min-width: $large-screen) {
             margin-right: 32px;
         }
     }
@@ -23,7 +23,7 @@
     &__settings {
         display: none;
         margin-right: 30px;
-        @media (min-width: $middle-screen) {
+        @media (min-width: $large-screen) {
             display: flex;
         }
     }

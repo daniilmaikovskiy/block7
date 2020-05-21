@@ -1,7 +1,43 @@
 .my-site {
-    &__services-and-facilities {
-        @media (min-width: $middle-screen) {
-            padding-top: 32px;
-        }
+  position: relative;
+  max-width: $large-screen;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__services-and-facilities {
+      @media (min-width: $large-screen) {
+        padding-top: 32px;
+        min-height: 520px;
+        max-width: $middle-screen;
+      }
+  }
+  &__side-menu {
+    left: -320px;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+    &--active {
+      opacity: 1;
+      left: 0;
+      width: 100%;
     }
+
+    @media (min-width: $small-screen) {
+      &--active {
+        width: 320px;
+      }
+    }
+
+    @media (min-width: $large-screen) {
+      display: block;
+      left: 0;
+      opacity: 1;
+    }
+  }
+  &__main {
+    @media (min-width: $large-screen) {
+      position: absolute;
+      right: 0;
+    }
+  }
 }

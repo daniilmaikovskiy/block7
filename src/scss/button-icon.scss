@@ -15,4 +15,10 @@
         filter: hue-rotate(180deg) brightness(1.5);
         transform: scale(1.1);
     }
+
+    &--hidden\@large-screen {
+      @media (min-width: $large-screen) {
+        display: none;
+      }
+    }
 }

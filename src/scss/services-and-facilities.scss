@@ -3,13 +3,13 @@
   overflow: hidden;
 
   &__header {
-    @media (min-width: $middle-screen) {
-    display: none;
+    @media (min-width: $large-screen) {
+      display: none;
     }
   }
   &__main {
     margin-top: 24px;
-    @media (min-width: $middle-screen) {
+    @media (min-width: $large-screen) {
       margin-top: 0;
     }
   }
@@ -18,7 +18,7 @@
     @media (min-width: $small-screen) {
       margin-left: 24px;
     }
-    @media (min-width: $middle-screen) {
+    @media (min-width: $large-screen) {
       margin-left: 32px;
     }
   }
@@ -32,7 +32,7 @@
       flex-direction: row;
       margin-left: 8px;
     }
-    @media (min-width: $middle-screen) {
+    @media (min-width: $large-screen) {
       margin-left: 16px;
     }
   }

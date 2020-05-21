@@ -1,7 +1,22 @@
 .side-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 320px;
+  background-color: #fff;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+  z-index: 10000;
+  min-height: 100%;
 
   &__vertical-menu {
     margin-bottom: 32px;
+  }
+
+  &__footer {
+    padding-bottom: 16px;
+
+    @media (min-width: $small-screen) {
+      margin-top: 240px;
+    }
   }
 }
