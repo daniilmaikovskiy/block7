@@ -4,10 +4,8 @@
     width: 100%;
 
     &__hightlight {
-        width: 4px;
-        height: 40px;
         margin-right: 12px;
-        background-image: url(/img/hightlight.svg);
+
         @media (min-width: $small-screen) {
             margin-right: 20px;
         }

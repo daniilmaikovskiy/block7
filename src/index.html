@@ -8,6 +8,71 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="my-site">
+  <section class="side-menu my-site__side-menu">
+    <header class="header header--without-box-shadow side-menu__header">
+      <button class="button-icon header__button-icon">
+        <img src="/img/burger-close.svg" alt="Закрыть меню" class="button-icon__img">
+      </button>
+      <div class="logo header__logo">
+        <img src="/img/logo.svg" alt="">
+      </div>
+      <button class="button-icon header__button-icon">
+        <img src="/img/search.svg" alt="Поиск" class="button-icon__img">
+      </button>
+    </header>
+    <main class="vertical-menu side-menu__vertical-menu">
+      <button class="horizontal-button vertical-menu__horizontal-button">
+        <span class="horizontal-button__text">Ремонт техники</span>
+      </button>
+      <button class="horizontal-button horizontal-button--active
+        vertical-menu__horizontal-button">
+        <span class="horizontal-button__text">Услуги и сервисы</span>
+      </button>
+      <button class="horizontal-button vertical-menu__horizontal-button">
+        <span class="horizontal-button__text">Корпоративным клиентам</span>
+      </button>
+      <button class="horizontal-button vertical-menu__horizontal-button">
+        <span class="horizontal-button__text">Продавцам техники</span>
+      </button>
+      <button class="horizontal-button vertical-menu__horizontal-button">
+        <span class="horizontal-button__text">Партнерам</span>
+      </button>
+      <button class="horizontal-button vertical-menu__horizontal-button">
+        <span class="horizontal-button__text">Производителям</span>
+      </button>
+      <button class="horizontal-button vertical-menu__horizontal-button">
+        <span class="horizontal-button__text">Наши сервисы</span>
+      </button>
+      <button class="horizontal-button vertical-menu__horizontal-button">
+        <span class="horizontal-button__text">Контакты</span>
+      </button>
+    </main>
+    <footer class="footer">
+      <div class="contacts side-menu__contacts">
+        <button class="button-icon">
+          <img src="img/call.svg" alt="Позвонить" class="button-icon__img">
+        </button>
+        <button class="button-icon">
+          <img src="img/chat.svg" alt="Чат" class="button-icon__img">
+        </button>
+        <button class="button-icon">
+          <img src="img/profile.svg" alt="Профиль" class="button-icon__img">
+        </button>
+      </div>
+      <div class="email side-menu__email">
+        <span>mail@cps.com</span>
+      </div>
+      <div class="phone-number side-menu__phone-number">
+        <span>8 800 890 8900</span>
+      </div>
+      <div class="lang-panel side-menu__lang-panel">
+        <button class="button lang-panel__button
+          lang-panel__button--active">RU</button>
+        <button class="button lang-panel__button">EN</button>
+        <button class="button lang-panel__button">CH</button>
+      </div>
+    </footer>
+  </section>
   <section class="services-and-facilities my-site__services-and-facilities">
     <header class="header services-and-facilities__header">
       <button class="button-icon header__button-icon">
@@ -36,7 +101,7 @@
     </header>
     <main class="services-and-facilities__main">
       <div class="title">
-        <div class="title__hightlight"></div>
+        <div class="hightlight title__hightlight"></div>
         <h1 class="title__h1">Услуги и сервисы</h1>
         <div class="settings title__settings">
           <label for="title-button-repair" class="label settings__label">

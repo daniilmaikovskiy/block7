@@ -1,0 +1,35 @@
+.horizontal-button {
+  @extend .button;
+  display: flex;
+  width: 95%;
+  text-align: left;
+  position: relative;
+  height: 28px;
+  color: $horizontal-button--color;
+
+  &__text {
+    @extend .button__text;
+
+    font-weight: 500;
+  }
+
+  &:focus, &:hover {
+    box-shadow: none;
+    transform: scale(1.02);
+    opacity: $text--hover--opacity;
+  }
+
+  &--active {
+    color: $horizontal-button--color--active;
+  }
+
+  &--active::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 4px;
+    height: 28px;
+    background: url(/img/horizontal-button-hightlight.svg);
+  }
+}
