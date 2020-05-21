@@ -1,6 +1,8 @@
 import { addElement } from './helper.js';
 
 const IMG_PATH = '/img/';
+export const SERVICES_AND_FACILITIES_SHOW_BUTTON_TEXT = "Читать далее";
+export const SERVICES_AND_FACILITIES_HIDE_BUTTON_TEXT = "Скрыть";
 
 export const SERVICES_AND_FACILITIES_SWIPER_SETTINGS = {
   objectSettings: {

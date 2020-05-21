@@ -10,9 +10,18 @@
       display: none;
     }
   }
+  &__paragraph-2--visible {
+    display: block;
+  }
   &__paragraph-2-continuation {
     @media (max-width: $middle-screen - 1) {
       display: none;
     }
+  }
+  &__paragraph-2-continuation--visible {
+    display: inline;
+  }
+  &__show-hide-button {
+    margin-top: 10px;
   }
 }
