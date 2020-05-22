@@ -1,6 +1,12 @@
 import { addElement } from './helper.js';
+import { showHideOverflow } from './show-hide-button-helper.js';
 
 const IMG_PATH = '/img/';
+const DEFAULT_SHOW_HIDE_BUTTON = {
+  showText: 'Показать всё',
+  hideText: 'Скрыть',
+  buttonClass: 'show-hide-button',
+};
 
 export const SERVICES_AND_FACILITIES_SETTINGS = {
   swiperSettings: {
@@ -184,19 +190,10 @@ export const REPAIR_OF_VARIOUS_BRANDS = {
   },
   showHideButtonSettings: {
     id: '#repair-of-various-brands-show-more',
-    showText: 'Показать всё',
-    hideText: 'Скрыть',
-    buttonClass: 'show-hide-button',
-    showHideMethod: (function (isHidden) {
-      const TARGET_ELEMENT_CLASS = 'repair-of-various-brands__menu';
-      let target = document.querySelector(`.${TARGET_ELEMENT_CLASS}`);
-
-      if (isHidden) {
-        target.style = `height: ${target.scrollHeight}px;`;
-      }
-      else {
-        target.removeAttribute('style');
-      }
-    }),
+    showText: DEFAULT_SHOW_HIDE_BUTTON.showText,
+    hideText: DEFAULT_SHOW_HIDE_BUTTON.hideText,
+    buttonClass: DEFAULT_SHOW_HIDE_BUTTON.buttonClass,
+    target: '.repair-of-various-brands__menu',
+    showHideMethod: showHideOverflow,
   },
 };
