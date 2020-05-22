@@ -3,7 +3,6 @@
     align-items: center;
     padding: 0 16px;
     height: 87px;
-    width: 100%;
     background: $header--background;
     box-shadow: 0 1px 0 0 #D9FFF5;
 
@@ -30,12 +29,5 @@
     }
     &--without-box-shadow {
       box-shadow: none;
-    }
-    &__title {
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: -0.2px;
-      text-transform: uppercase;
-      color: #7E7E82; /* variables */
     }
 }

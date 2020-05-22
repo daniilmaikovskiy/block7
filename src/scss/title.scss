@@ -22,7 +22,7 @@
     }
     &__settings {
         display: none;
-        margin-right: 30px;
+        padding-right: 30px;
         @media (min-width: $large-screen) {
             display: flex;
         }

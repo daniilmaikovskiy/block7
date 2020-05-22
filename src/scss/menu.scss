@@ -4,6 +4,7 @@
 
   &__swiper {
     height: 72px;
+
     @media (min-width: $small-screen) {
       height: auto;
     }

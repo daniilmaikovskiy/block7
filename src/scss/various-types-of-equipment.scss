@@ -1,0 +1,7 @@
+.various-types-of-equipment {
+  &__small-header {
+    @media (min-width: $small-screen) {
+      height: 56px;
+    }
+  }
+}

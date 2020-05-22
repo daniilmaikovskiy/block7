@@ -1,6 +1,6 @@
 .services-and-facilities {
   background: $services-and-facilities--background;
-  overflow: hidden;
+  overflow-x: hidden;
 
   &__header {
     @media (min-width: $large-screen) {

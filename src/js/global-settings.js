@@ -189,14 +189,13 @@ export const REPAIR_OF_VARIOUS_BRANDS = {
     buttonClass: 'show-hide-button',
     showHideMethod: (function (isHidden) {
       const TARGET_ELEMENT_CLASS = 'repair-of-various-brands__menu';
-      const MODIFIER = '--show-all';
       let target = document.querySelector(`.${TARGET_ELEMENT_CLASS}`);
 
       if (isHidden) {
-        target.classList.add(`${TARGET_ELEMENT_CLASS}${MODIFIER}`);
+        target.style = `height: ${target.scrollHeight}px;`;
       }
       else {
-        target.classList.remove(`${TARGET_ELEMENT_CLASS}${MODIFIER}`);
+        target.removeAttribute('style');
       }
     }),
   },

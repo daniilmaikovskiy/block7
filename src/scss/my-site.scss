@@ -3,6 +3,7 @@
   max-width: $large-screen;
   margin-left: auto;
   margin-right: auto;
+  overflow-x: hidden;
 
   &__services-and-facilities {
       @media (min-width: $large-screen) {
@@ -15,6 +16,8 @@
   }
   &__side-menu {
     left: -320px;
+    top: 0;
+    bottom: 0;
     opacity: 0;
     transition: all 0.5s ease;
 

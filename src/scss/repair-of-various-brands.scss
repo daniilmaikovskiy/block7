@@ -2,26 +2,21 @@
   background: #F8F8F8; /* value */
   padding-bottom: 32px;
 
-  &__header {
-    height: 80px;
-    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
-    box-shadow: none;
+  &__small-header {
     @media (min-width: $small-screen) {
       height: 56px;
     }
   }
   &__menu {
     margin-top: 16px;
+
     @media (min-width: $small-screen) {
       margin-top: 24px;
       margin-left: 24px;
       display: block;
       height: 160px;
       overflow: hidden;
-    }
-
-    &--show-all {
-      height: auto;
+      transition: height 0.6s ease;
     }
   }
   &__show-hide-button {
