@@ -1,0 +1,8 @@
+.swiper-slide {
+  &__button {
+    @media (min-width: $small-screen) {
+      margin-right: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}

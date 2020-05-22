@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content='Услуги и сервисы'>
+  <meta name="keywords" content="ремонт,услуги,сервисы">
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body class="my-site">
@@ -149,6 +151,24 @@
               class="services-and-facilities__picture-img">
           </figure>
         </div>
+      </main>
+    </section>
+    <section class='repair-of-various-brands my-site__repair-of-various-brands'>
+      <header class="header repair-of-various-brands__header">
+        <p class="header__title">Ремонт техники различных брендов</p>
+      </header>
+      <main>
+        <div class="menu repair-of-various-brands__menu">
+          <div class="menu__swiper"
+            id='repair-of-various-brands-swiper'></div>
+            <div class="swiper-pagination menu__swiper-pagination"
+              id="repair-of-various-brands__swiper-pagination"></div>
+        </div>
+        <button class="show-hide-button repair-of-various-brands__show-hide-button"
+          id='repair-of-various-brands-show-more'>
+          <img class="show-hide-button__img" src="/img/show-icon.svg" alt="">
+          <span class="show-hide-button__text">Показать ещё</span>
+        </button>
       </main>
     </section>
   </main>

@@ -1,0 +1,17 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  &__swiper {
+    height: 72px;
+    @media (min-width: $small-screen) {
+      height: auto;
+    }
+  }
+
+  &__swiper-pagination {
+    @media (min-width: $small-screen) {
+      display: none;
+    }
+  }
+}

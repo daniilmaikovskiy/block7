@@ -1,0 +1,30 @@
+.repair-of-various-brands {
+
+  &__header {
+    height: 80px;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    box-shadow: none;
+  }
+  &__menu {
+    margin-top: 16px;
+    @media (min-width: $small-screen) {
+      margin-top: 24px;
+      margin-left: 24px;
+      display: block;
+      height: 160px;
+      overflow: hidden;
+    }
+
+    &--show-all {
+      height: auto;
+    }
+  }
+  &__show-hide-button {
+    display: none;
+    @media (min-width: $small-screen) {
+      display: block;
+      margin-top: 16px;
+      margin-left: 24px;
+    }
+  }
+}

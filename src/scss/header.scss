@@ -31,4 +31,11 @@
     &--without-box-shadow {
       box-shadow: none;
     }
+    &__title {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-transform: uppercase;
+      color: #7E7E82; /* variables */
+    }
 }

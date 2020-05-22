@@ -23,4 +23,35 @@
   &:focus, &:hover {
     box-shadow: $button--focus--box-shadow;
   }
+
+  &__img {
+    margin-left: 16px;
+    height: 32px;
+    width: auto;
+  }
+
+  &__img--small {
+    height: 52px;
+  }
+
+  &__img--big {
+    height: 22px;
+  }
+
+  &__img--little-big {
+    height: 26px;
+  }
+
+  &--brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    height: 72px;
+    border: 1px solid #EAEAEA; /* value */
+  }
+
+  &__arrow {
+    margin-right: 16px;
+  }
 }
