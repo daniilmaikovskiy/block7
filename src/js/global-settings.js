@@ -64,8 +64,8 @@ export const SERVICES_AND_FACILITIES_SETTINGS = {
   showHideButtonSettings: {
     id: '#read-more',
     showText: 'Читать далее',
-    hideText: 'Скрыть',
-    buttonClass: 'show-hide-button',
+    hideText: DEFAULT_SHOW_HIDE_BUTTON.hideText,
+    buttonClass: DEFAULT_SHOW_HIDE_BUTTON.buttonClass,
     hiddenElementsClasses: ['info__paragraph-2', 'info__paragraph-2-continuation'],
     showHideMethod: (function (isHidden) {
       const MODIFIER = '--visible';
@@ -193,7 +193,7 @@ export const REPAIR_OF_VARIOUS_BRANDS = {
     showText: DEFAULT_SHOW_HIDE_BUTTON.showText,
     hideText: DEFAULT_SHOW_HIDE_BUTTON.hideText,
     buttonClass: DEFAULT_SHOW_HIDE_BUTTON.buttonClass,
-    target: '.repair-of-various-brands__menu',
+    target: '.repair-of-various-brands .show-hide-swiper-menu__menu',
     showHideMethod: showHideOverflow,
   },
 };
@@ -307,7 +307,7 @@ export const VARIOUS_TYPES_OF_EQUIPMENT = {
     showText: DEFAULT_SHOW_HIDE_BUTTON.showText,
     hideText: DEFAULT_SHOW_HIDE_BUTTON.hideText,
     buttonClass: DEFAULT_SHOW_HIDE_BUTTON.buttonClass,
-    target: '.various-types-of-equipment__menu',
+    target: '.various-types-of-equipment .show-hide-swiper-menu__menu',
     showHideMethod: showHideOverflow,
   },
 };

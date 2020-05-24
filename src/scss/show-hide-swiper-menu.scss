@@ -1,10 +1,12 @@
-.various-types-of-equipment {
+.show-hide-swiper-menu {
+  background: #F8F8F8; /* value */
+  padding-bottom: 32px;
+
   &__small-header {
     @media (min-width: $small-screen) {
       height: 56px;
     }
   }
-
   &__menu {
     margin-top: 16px;
 
@@ -17,7 +19,6 @@
       transition: height 0.6s ease;
     }
   }
-
   &__show-hide-button {
     display: none;
     @media (min-width: $small-screen) {
