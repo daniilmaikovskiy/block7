@@ -1,0 +1,31 @@
+.service-block {
+  position: relative;
+  background: #fff; /* value */
+  width: 260px;
+  height: 200px;
+  border-radius: 6px;
+  margin-left: 24px;
+  padding: 16px;
+
+  &__title {
+    color: #7E7E82; /* value */
+    opacity: 0.72;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 4px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1B1C21; /* value */
+  }
+  &__text-block {
+    margin-bottom: 16px;
+  }
+  &__button-arrow {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+  }
+}

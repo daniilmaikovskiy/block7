@@ -8,6 +8,7 @@ const DEFAULT_SHOW_HIDE_BUTTON = {
   buttonClass: 'show-hide-button',
 };
 
+const SECTION_1_NAME = 'services-and-facilities';
 export const SERVICES_AND_FACILITIES_SETTINGS = {
   swiperSettings: {
     objectSettings: {
@@ -27,7 +28,7 @@ export const SERVICES_AND_FACILITIES_SETTINGS = {
       'Отзывы',
     ],
     elementClass: 'button',
-    containerSelector: '#services-and-facilities',
+    containerSelector: `#${SECTION_1_NAME}__swiper`,
     activeIndex: 0,
     addElements: (function (swiperSlides) {
       let elements = [];
@@ -84,6 +85,7 @@ export const SERVICES_AND_FACILITIES_SETTINGS = {
   },
 };
 
+const SECTION_2_NAME = 'repair-of-various-brands';
 export const REPAIR_OF_VARIOUS_BRANDS = {
   swiperSettings: {
     objectSettings: {
@@ -96,7 +98,7 @@ export const REPAIR_OF_VARIOUS_BRANDS = {
       grabCursor: true,
 
       pagination: {
-        el: '#repair-of-various-brands__swiper-pagination',
+        el: `#${SECTION_2_NAME}__swiper-pagination`,
         clickable: true,
     },
     },
@@ -158,7 +160,7 @@ export const REPAIR_OF_VARIOUS_BRANDS = {
       },
     ],
     elementClass: 'brand-button',
-    containerSelector: '#repair-of-various-brands-swiper',
+    containerSelector: `#${SECTION_2_NAME}__swiper`,
     addElements: (function (swiperSlides) {
       const BUTTON_ARROW_PATH = IMG_PATH + 'button__arrow.svg';
 
@@ -185,15 +187,16 @@ export const REPAIR_OF_VARIOUS_BRANDS = {
     }),
   },
   showHideButtonSettings: {
-    id: '#repair-of-various-brands-show-more',
+    id: `#${SECTION_2_NAME}__show-more`,
     showText: DEFAULT_SHOW_HIDE_BUTTON.showText,
     hideText: DEFAULT_SHOW_HIDE_BUTTON.hideText,
     buttonClass: DEFAULT_SHOW_HIDE_BUTTON.buttonClass,
-    target: '.repair-of-various-brands .show-hide-swiper-menu__menu',
+    target: `.${SECTION_2_NAME} .show-hide-swiper-menu__menu`,
     showHideMethod: showHideOverflow,
   },
 };
 
+const SECTION_3_NAME = 'various-types-of-equipment';
 export const VARIOUS_TYPES_OF_EQUIPMENT = {
   swiperSettings: {
     objectSettings: {
@@ -206,7 +209,7 @@ export const VARIOUS_TYPES_OF_EQUIPMENT = {
       grabCursor: true,
 
       pagination: {
-        el: '#various-types-of-equipment__swiper-pagination',
+        el: `#${SECTION_3_NAME}__swiper-pagination`,
         clickable: true,
     },
     },
@@ -217,7 +220,7 @@ export const VARIOUS_TYPES_OF_EQUIPMENT = {
       'Ремонт мониторов',
     ],
     elementClass: 'equipment-button',
-    containerSelector: '#various-types-of-equipment-swiper',
+    containerSelector: `#${SECTION_3_NAME}__swiper`,
     addElements: (function (swiperSlides) {
       const BUTTON_ARROW_PATH = IMG_PATH + 'button__arrow.svg';
 
@@ -236,11 +239,71 @@ export const VARIOUS_TYPES_OF_EQUIPMENT = {
     }),
   },
   showHideButtonSettings: {
-    id: '#various-types-of-equipment-show-more',
+    id: `#${SECTION_3_NAME}__show-more`,
     showText: DEFAULT_SHOW_HIDE_BUTTON.showText,
     hideText: DEFAULT_SHOW_HIDE_BUTTON.hideText,
     buttonClass: DEFAULT_SHOW_HIDE_BUTTON.buttonClass,
-    target: '.various-types-of-equipment .show-hide-swiper-menu__menu',
+    target: `.${SECTION_3_NAME} .show-hide-swiper-menu__menu`,
     showHideMethod: showHideOverflow,
   },
 };
+// don't work
+/*
+export const SERVICE_PRICES = {
+  swiperSettings: {
+    objectSettings: {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      slidesOffsetBefore: 8,
+
+      a11y: true,
+      keyboardControl: true,
+      grabCursor: true,
+
+      pagination: {
+        el: '#service-prices__swiper-pagination',
+        clickable: true,
+      },
+    },
+    elementsData: [
+      {
+        service: 'Диагностика',
+        price: 0,
+        term: '30 мин',
+      },
+      {
+        service: 'Замена дисплея',
+        price: 1000,
+        term: '30-120 мин',
+      },
+      {
+        service: 'Замена полиграфического динамика',
+        price: 1000,
+        term: '30-120 мин',
+      },
+      {
+        service: 'Тестирование с выдачей технического заключения',
+        price: 1000,
+        term: '30-120 мин',
+      },
+      {
+        service: 'Замена программного обеспечения',
+        price: 1000,
+        term: '30-120 мин',
+      },
+    ],
+    elementTitles: ['Ремонтные услуги', 'Цена', 'Срок'],
+    elementClass: 'service-block',
+    containerSelector: '#service-prices-swiper',
+    addElements: (function (swiperSlides) {
+      const BUTTON_ARROW_PATH = IMG_PATH + 'button-arrow__img.svg';
+
+      for (let i = 0; i < this.elementsData.length; i++) {
+
+        let element = addElement(swiperSlides[i], this.elementClass);
+
+
+      }
+    }),
+  },
+};*/

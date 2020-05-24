@@ -1,0 +1,20 @@
+.button-arrow {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  background: #FF3E79;
+  border-radius: 16px;
+
+  &__img {
+    padding: 9px 11px;
+  }
+  &__text {
+    margin-left: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: #FFFFFF; /* value */
+  }
+}
