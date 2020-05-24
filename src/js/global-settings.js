@@ -197,3 +197,117 @@ export const REPAIR_OF_VARIOUS_BRANDS = {
     showHideMethod: showHideOverflow,
   },
 };
+// don't work
+export const VARIOUS_TYPES_OF_EQUIPMENT = {
+  swiperSettings: {
+    objectSettings: {
+      slidesPerView: 'auto',
+      spaceBetween: 16,
+      slidesOffsetBefore: 16,
+
+      a11y: true,
+      keyboardControl: true,
+      grabCursor: true,
+
+      pagination: {
+        el: '#various-types-of-equipment__swiper-pagination',
+        clickable: true,
+    },
+    },
+    elementsData: [
+      {
+        src: 'lenovo.png',
+        alt: 'Lenovo',
+        sizeModifier: null
+      },
+      {
+        src: 'samsung.png',
+        alt: 'Samsung',
+        sizeModifier: null
+      },
+      {
+        src: 'apple.png',
+        alt: 'Apple',
+        sizeModifier: 'small'
+      },
+      {
+        src: 'view-sonic.png',
+        alt: 'View Sonic',
+        sizeModifier: 'big'
+      },
+      {
+        src: 'bosch.png',
+        alt: 'Bosch',
+        sizeModifier: 'little-big'
+      },
+      {
+        src: 'hp.png',
+        alt: 'hp',
+        sizeModifier: 'small'
+      },
+      {
+        src: 'acer.png',
+        alt: 'Acer',
+        sizeModifier: 'big'
+      },
+      {
+        src: 'sony.png',
+        alt: 'Sony',
+        sizeModifier: 'big'
+      },
+      {
+        src: 'lenovo.png',
+        alt: 'Lenovo',
+        sizeModifier: null
+      },
+      {
+        src: 'samsung.png',
+        alt: 'Samsung',
+        sizeModifier: null
+      },
+      {
+        src: 'apple.png',
+        alt: 'Apple',
+        sizeModifier: 'small'
+      },
+    ],
+    elementClass: 'button',
+    elementModifier: '--brand',
+    containerSelector: '#various-types-of-equipment-swiper',
+    addElements: (function (swiperSlides) {
+      const BUTTON_ARROW_PATH = IMG_PATH + 'button__arrow.svg';
+
+      for (let i = 0; i < this.elementsData.length; i++) {
+
+        let element = addElement(swiperSlides[i],
+          [
+            this.elementClass, `swiper-slide__${this.elementClass}`,
+            this.elementClass + this.elementModifier
+          ], 'button');
+
+        let elementBrandImgClasses = [`${this.elementClass}__img`];
+
+        if (this.elementsData[i].sizeModifier !== null) {
+          elementBrandImgClasses.push(
+            `${this.elementClass}__img--${this.elementsData[i].sizeModifier}`);
+        }
+
+        let elementBrandImg = addElement(element, elementBrandImgClasses, 'img');
+        elementBrandImg.src = `${IMG_PATH}${this.elementsData[i].src}`;
+        elementBrandImg.alt = `${IMG_PATH}${this.elementsData[i].alt}`;
+
+        let elementArrow = addElement(element, `${this.elementClass}__arrow`, 'img');
+        elementArrow.src = BUTTON_ARROW_PATH;
+        elementArrow.alt = '';
+      }
+    }),
+  },
+  showHideButtonSettings: {
+    id: '#various-types-of-equipment-show-more',
+    showText: DEFAULT_SHOW_HIDE_BUTTON.showText,
+    hideText: DEFAULT_SHOW_HIDE_BUTTON.hideText,
+    buttonClass: DEFAULT_SHOW_HIDE_BUTTON.buttonClass,
+    target: '.various-types-of-equipment__menu',
+    showHideMethod: showHideOverflow,
+  },
+};
