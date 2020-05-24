@@ -4,4 +4,10 @@
   @media (min-width: $small-screen) {
     flex-wrap: wrap;
   }
+
+  &--table\@small-screen {
+    @media (min-width: $small-screen) {
+      display: table;
+    }
+  }
 }

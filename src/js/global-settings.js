@@ -248,7 +248,7 @@ export const VARIOUS_TYPES_OF_EQUIPMENT = {
   },
 };
 // don't work
-/*
+const SECTION_4_NAME = 'service-prices';
 export const SERVICE_PRICES = {
   swiperSettings: {
     objectSettings: {
@@ -261,49 +261,78 @@ export const SERVICE_PRICES = {
       grabCursor: true,
 
       pagination: {
-        el: '#service-prices__swiper-pagination',
+        el: `#${SECTION_4_NAME}__swiper-pagination`,
         clickable: true,
       },
     },
     elementsData: [
       {
         service: 'Диагностика',
-        price: 0,
+        price: 'Бесплатно',
         term: '30 мин',
       },
       {
         service: 'Замена дисплея',
-        price: 1000,
+        price: '1000 ₽',
         term: '30-120 мин',
       },
       {
         service: 'Замена полиграфического динамика',
-        price: 1000,
+        price: '1000 ₽',
         term: '30-120 мин',
       },
       {
         service: 'Тестирование с выдачей технического заключения',
-        price: 1000,
+        price: '1000 ₽',
         term: '30-120 мин',
       },
       {
         service: 'Замена программного обеспечения',
-        price: 1000,
+        price: '1000 ₽',
         term: '30-120 мин',
       },
     ],
     elementTitles: ['Ремонтные услуги', 'Цена', 'Срок'],
     elementClass: 'service-block',
-    containerSelector: '#service-prices-swiper',
+    containerSelector: `#${SECTION_4_NAME}__swiper`,
     addElements: (function (swiperSlides) {
-      const BUTTON_ARROW_PATH = IMG_PATH + 'button-arrow__img.svg';
+      const BUTTON_ARROW_IMG_PATH = IMG_PATH + 'button-arrow__img.svg';
+      const BUTTON_ARROW_CLASS = 'button-arrow';
+      const BUTTON_ARROW_TEXT = 'Заказать';
+
+      let swiperWrapper = document.querySelector(
+        `${this.containerSelector} .swiper-wrapper`);
+      swiperWrapper.classList.add('swiper-wrapper--table@small-screen');
 
       for (let i = 0; i < this.elementsData.length; i++) {
 
         let element = addElement(swiperSlides[i], this.elementClass);
 
+        let currentData = this.elementsData[i];
+        let objKeys = Object.keys(currentData);
 
+        for (let j = 0; j < this.elementTitles.length; j++) {
+          let textBlock = addElement(element, `${this.elementClass}__text-block`);
+
+          let title = addElement(textBlock, `${this.elementClass}__title`, 'h2');
+          title.textContent = this.elementTitles[j];
+
+          let text = addElement(textBlock, `${this.elementClass}__text`, 'p');
+          text.textContent = currentData[objKeys[j]];
+        }
+
+        let buttonArrow = addElement(element, [BUTTON_ARROW_CLASS,
+          `${this.elementClass}__${BUTTON_ARROW_CLASS}`], 'button');
+
+        let buttonArrowText = addElement(buttonArrow,
+          `${BUTTON_ARROW_CLASS}__text`, 'span');
+        buttonArrowText.textContent = BUTTON_ARROW_TEXT;
+
+        let buttonArrowImg = addElement(buttonArrow,
+          `${BUTTON_ARROW_CLASS}__img`, 'img');
+          buttonArrowImg.src = BUTTON_ARROW_IMG_PATH;
+          buttonArrowImg.alt = '';
       }
     }),
   },
-};*/
+};

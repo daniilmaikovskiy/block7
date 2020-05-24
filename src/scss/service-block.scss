@@ -4,15 +4,19 @@
   width: 260px;
   height: 200px;
   border-radius: 6px;
-  margin-left: 24px;
   padding: 16px;
 
   &__title {
     color: #7E7E82; /* value */
     opacity: 0.72;
     font-size: 14px;
+    font-weight: normal;
     line-height: 16px;
     margin-bottom: 4px;
+
+    @media (min-width: $small-screen) {
+      display: none;
+    }
   }
   &__text {
     font-size: 14px;
@@ -27,5 +31,9 @@
     position: absolute;
     bottom: 16px;
     right: 16px;
+
+    @media (min-width: $small-screen) {
+      position: static;
+    }
   }
 }

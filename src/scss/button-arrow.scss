@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   height: 32px;
-  background: #FF3E79;
+  background: #FF3E79; /* value */
   border-radius: 16px;
+  transition: all 0.4s ease;
 
   &__img {
     padding: 9px 11px;
@@ -16,5 +17,9 @@
     letter-spacing: -0.15px;
     text-transform: uppercase;
     color: #FFFFFF; /* value */
+  }
+
+  &:hover, &:focus {
+    filter: hue-rotate(180deg) brightness(1.5);
   }
 }
