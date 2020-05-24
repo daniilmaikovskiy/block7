@@ -157,8 +157,7 @@ export const REPAIR_OF_VARIOUS_BRANDS = {
         sizeModifier: 'small'
       },
     ],
-    elementClass: 'button',
-    elementModifier: '--brand',
+    elementClass: 'brand-button',
     containerSelector: '#repair-of-various-brands-swiper',
     addElements: (function (swiperSlides) {
       const BUTTON_ARROW_PATH = IMG_PATH + 'button__arrow.svg';
@@ -166,10 +165,7 @@ export const REPAIR_OF_VARIOUS_BRANDS = {
       for (let i = 0; i < this.elementsData.length; i++) {
 
         let element = addElement(swiperSlides[i],
-          [
-            this.elementClass, `swiper-slide__${this.elementClass}`,
-            this.elementClass + this.elementModifier
-          ], 'button');
+          [this.elementClass, `swiper-slide__${this.elementClass}`], 'button');
 
         let elementBrandImgClasses = [`${this.elementClass}__img`];
 
@@ -271,8 +267,7 @@ export const VARIOUS_TYPES_OF_EQUIPMENT = {
         sizeModifier: 'small'
       },
     ],
-    elementClass: 'button',
-    elementModifier: '--brand',
+    elementClass: 'brand-button',
     containerSelector: '#various-types-of-equipment-swiper',
     addElements: (function (swiperSlides) {
       const BUTTON_ARROW_PATH = IMG_PATH + 'button__arrow.svg';
@@ -280,10 +275,7 @@ export const VARIOUS_TYPES_OF_EQUIPMENT = {
       for (let i = 0; i < this.elementsData.length; i++) {
 
         let element = addElement(swiperSlides[i],
-          [
-            this.elementClass, `swiper-slide__${this.elementClass}`,
-            this.elementClass + this.elementModifier
-          ], 'button');
+          [this.elementClass, `swiper-slide__${this.elementClass}`], 'button');
 
         let elementBrandImgClasses = [`${this.elementClass}__img`];
 
