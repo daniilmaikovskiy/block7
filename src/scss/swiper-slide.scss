@@ -1,5 +1,5 @@
 .swiper-slide {
-  &__brand-button {
+  &__brand-button, &__equipment-button {
     @media (min-width: $small-screen) {
       margin-right: 16px;
       margin-bottom: 16px;

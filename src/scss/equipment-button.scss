@@ -1,0 +1,19 @@
+.equipment-button {
+  @extend .brand-button;
+  position: relative;
+  width: 224px;
+  height: 160px;
+
+  &__text {
+    color: #1B1C21; /* value */
+    font-weight: 500;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  &__arrow {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+  }
+}

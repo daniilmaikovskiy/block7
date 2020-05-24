@@ -193,7 +193,7 @@ export const REPAIR_OF_VARIOUS_BRANDS = {
     showHideMethod: showHideOverflow,
   },
 };
-// don't work
+
 export const VARIOUS_TYPES_OF_EQUIPMENT = {
   swiperSettings: {
     objectSettings: {
@@ -211,63 +211,12 @@ export const VARIOUS_TYPES_OF_EQUIPMENT = {
     },
     },
     elementsData: [
-      {
-        src: 'lenovo.png',
-        alt: 'Lenovo',
-        sizeModifier: null
-      },
-      {
-        src: 'samsung.png',
-        alt: 'Samsung',
-        sizeModifier: null
-      },
-      {
-        src: 'apple.png',
-        alt: 'Apple',
-        sizeModifier: 'small'
-      },
-      {
-        src: 'view-sonic.png',
-        alt: 'View Sonic',
-        sizeModifier: 'big'
-      },
-      {
-        src: 'bosch.png',
-        alt: 'Bosch',
-        sizeModifier: 'little-big'
-      },
-      {
-        src: 'hp.png',
-        alt: 'hp',
-        sizeModifier: 'small'
-      },
-      {
-        src: 'acer.png',
-        alt: 'Acer',
-        sizeModifier: 'big'
-      },
-      {
-        src: 'sony.png',
-        alt: 'Sony',
-        sizeModifier: 'big'
-      },
-      {
-        src: 'lenovo.png',
-        alt: 'Lenovo',
-        sizeModifier: null
-      },
-      {
-        src: 'samsung.png',
-        alt: 'Samsung',
-        sizeModifier: null
-      },
-      {
-        src: 'apple.png',
-        alt: 'Apple',
-        sizeModifier: 'small'
-      },
+      'Ремонт ноутбуков',
+      'Ремонт планшетов',
+      'Ремонт ПК',
+      'Ремонт мониторов',
     ],
-    elementClass: 'brand-button',
+    elementClass: 'equipment-button',
     containerSelector: '#various-types-of-equipment-swiper',
     addElements: (function (swiperSlides) {
       const BUTTON_ARROW_PATH = IMG_PATH + 'button__arrow.svg';
@@ -277,16 +226,8 @@ export const VARIOUS_TYPES_OF_EQUIPMENT = {
         let element = addElement(swiperSlides[i],
           [this.elementClass, `swiper-slide__${this.elementClass}`], 'button');
 
-        let elementBrandImgClasses = [`${this.elementClass}__img`];
-
-        if (this.elementsData[i].sizeModifier !== null) {
-          elementBrandImgClasses.push(
-            `${this.elementClass}__img--${this.elementsData[i].sizeModifier}`);
-        }
-
-        let elementBrandImg = addElement(element, elementBrandImgClasses, 'img');
-        elementBrandImg.src = `${IMG_PATH}${this.elementsData[i].src}`;
-        elementBrandImg.alt = `${IMG_PATH}${this.elementsData[i].alt}`;
+        let elementText = addElement(element, `${this.elementClass}__text`, 'span');
+        elementText.textContent = this.elementsData[i];
 
         let elementArrow = addElement(element, `${this.elementClass}__arrow`, 'img');
         elementArrow.src = BUTTON_ARROW_PATH;
