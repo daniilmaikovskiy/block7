@@ -302,11 +302,20 @@ export const SERVICE_PRICES = {
 
       let swiperWrapper = document.querySelector(
         `${this.containerSelector} .swiper-wrapper`);
-      swiperWrapper.classList.add('swiper-wrapper--table@small-screen');
+      swiperWrapper.classList.add('swiper-wrapper--service-prices');
+      swiperWrapper.style =
+        `grid-template-rows: repeat(${this.elementsData.length}, 1fr);`;
 
       for (let i = 0; i < this.elementsData.length; i++) {
 
-        let element = addElement(swiperSlides[i], this.elementClass);
+        swiperSlides[i].classList.add('swiper-slide--service-prices');
+
+        let element = addElement(swiperSlides[i],
+          [this.elementClass, `swiper-slide__${this.elementClass}`]);
+
+        if (i === 0) {
+          element.classList.add(`swiper-slide__${this.elementClass}--first`);
+        }
 
         let currentData = this.elementsData[i];
         let objKeys = Object.keys(currentData);

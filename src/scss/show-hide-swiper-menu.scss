@@ -18,6 +18,10 @@
       overflow: hidden;
       transition: height 0.6s ease;
     }
+
+    &--height--auto {
+      height: auto;
+    }
   }
   &__show-hide-button {
     display: none;

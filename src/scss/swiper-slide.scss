@@ -5,4 +5,28 @@
       margin-bottom: 16px;
     }
   }
+
+  &--service-prices {
+    @media (min-width: $small-screen) {
+      display: grid;
+      grid-template-columns: 15px 1fr 15px;
+    }
+  }
+
+  &__service-block {
+    @media (min-width: $small-screen) {
+      display: grid;
+      grid-template-columns: 50% 1fr 1fr 120px;
+      grid-column: 2 / -2;
+      width: auto;
+      height: auto;
+      padding: 0;
+      border-top: 1px solid #eaeaea; /* value */
+      border-radius: 0;
+    }
+
+    &--first {
+      border: none;
+    }
+  }
 }

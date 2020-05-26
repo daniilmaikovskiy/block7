@@ -5,9 +5,11 @@
     flex-wrap: wrap;
   }
 
-  &--table\@small-screen {
+  &--service-prices {
     @media (min-width: $small-screen) {
-      display: table;
+      display: grid;
+      background: #fff;
+      border-radius: 6px;
     }
   }
 }
