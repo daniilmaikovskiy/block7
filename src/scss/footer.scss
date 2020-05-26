@@ -1,5 +1,5 @@
 .footer {
-  background: inherit;
+  background: #fff;
 
   &__contacts {
     margin-left: 24px;
@@ -14,5 +14,28 @@
   }
   &__lang-panel {
     margin-left: 24px;
+  }
+  &__text, &__link {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7E82; /* value */
+    opacity: 0.72;
+    text-decoration: none;
+
+    @media (min-width: $small-screen) {
+      text-align: left;
+      max-width: 33%;
+    }
+
+    &--last\@small-screen {
+      @media (min-width: $small-screen) {
+        text-align: right;
+      }
+    }
+  }
+  &__link:hover, &__link:focus {
+    text-decoration: underline;
   }
 }

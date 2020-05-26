@@ -1,0 +1,8 @@
+.link {
+  color: #FF3E79;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}

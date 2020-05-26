@@ -1,0 +1,14 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__input-text {
+    margin-bottom: 16px;
+  }
+  &__button-arrow {
+    margin-top: 24px;
+    width: 120px;
+    align-self: flex-end;
+  }
+}

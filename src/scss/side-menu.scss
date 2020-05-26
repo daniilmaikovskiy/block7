@@ -10,10 +10,12 @@
 
   &__vertical-menu {
     margin-bottom: 32px;
+    background-color: #fff; /* value */
   }
 
   &__footer {
     padding-bottom: 16px;
+    background-color: #fff; /* value */
 
     @media (min-width: $small-screen) {
       margin-top: 240px;

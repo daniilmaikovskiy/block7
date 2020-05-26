@@ -1,0 +1,18 @@
+.modal {
+  position: absolute;
+  top: 0;
+  right: -320px;
+  width: 0;
+  height: 100%;
+  background-color: #fff; /* value */
+  z-index: 18000;
+
+  &__button-icon {
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+  }
+  &__form {
+    padding: 16px;
+  }
+}
