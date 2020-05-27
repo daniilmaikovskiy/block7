@@ -1191,7 +1191,7 @@ button.swiper-pagination-bullet {
     left: 0;
     width: 4px;
     height: 28px;
-    background: url(/img/horizontal-button-hightlight.svg); }
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 4 29' preserveAspectRatio='none' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.83325 1.91643C3.83325 0.85788 2.97513 -0.000244141 1.91659 -0.000244141C0.858039 -0.000244141 -8.15392e-05 0.857877 -8.15392e-05 1.91642V26.3908C-8.15392e-05 27.4493 0.858039 28.3075 1.91659 28.3075C2.97513 28.3075 3.83325 27.4493 3.83325 26.3908V1.91643Z' fill='%2341F6D7'/%3E%3C/svg%3E%0A"); }
 
 .phone-number {
   font-size: 24px;
