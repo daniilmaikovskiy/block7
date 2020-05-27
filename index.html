@@ -2,18 +2,16 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content='Услуги и сервисы'>
+  <meta name="description" content="Услуги и сервисы">
   <meta name="keywords" content="ремонт,услуги,сервисы">
-  <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
+  <title>site</title>
+<link href="style.css" rel="stylesheet"></head>
 <body class="my-site">
   <section class="side-menu my-site__side-menu">
     <header class="header header--without-box-shadow side-menu__header">
-      <button class="button-icon button-icon--hidden@large-screen header__button-icon"
-        id="side-menu-button-close">
+      <button class="button-icon button-icon--hidden@large-screen header__button-icon" id="side-menu-button-close">
         <img src="/img/burger-close.svg" alt="Закрыть меню" class="button-icon__img">
       </button>
       <div class="logo header__logo">
@@ -27,8 +25,7 @@
       <button class="horizontal-button vertical-menu__horizontal-button">
         <span class="horizontal-button__text">Ремонт техники</span>
       </button>
-      <button class="horizontal-button horizontal-button--active
-        vertical-menu__horizontal-button">
+      <button class="horizontal-button horizontal-button--active vertical-menu__horizontal-button">
         <span class="horizontal-button__text">Услуги и сервисы</span>
       </button>
       <button class="horizontal-button vertical-menu__horizontal-button">
@@ -69,8 +66,7 @@
         <span>8 800 890 8900</span>
       </div>
       <div class="lang-panel footer__lang-panel">
-        <button class="button lang-panel__button
-          lang-panel__button--active">RU</button>
+        <button class="button lang-panel__button lang-panel__button--active">RU</button>
         <button class="button lang-panel__button">EN</button>
         <button class="button lang-panel__button">CH</button>
       </div>
@@ -122,8 +118,7 @@
             </label>
           </div>
         </div>
-        <div class="services-and-facilities__swiper"
-          id='services-and-facilities__swiper'></div>
+        <div class="services-and-facilities__swiper" id="services-and-facilities__swiper"></div>
         <div class="services-and-facilities__info-and-picture-wrapper">
           <div class="info services-and-facilities__info">
             <p>
@@ -142,31 +137,28 @@
                 советуют нас родным и близким.
               </span>
             </p>
-            <button class="show-hide-button info__show-hide-button" id='read-more'>
+            <button class="show-hide-button info__show-hide-button" id="read-more">
               <img class="show-hide-button__img" src="/img/show-icon.svg" alt="">
               <span class="show-hide-button__text">Читать далее</span>
             </button>
           </div>
           <figure class="services-and-facilities__picture">
-            <img src="/img/cps-big-picture.png" alt=""
-              class="services-and-facilities__picture-img">
+            <img src="/img/cps-big-picture.png" alt="" class="services-and-facilities__picture-img">
           </figure>
         </div>
       </main>
     </section>
-    <section class='repair-of-various-brands'>
+    <section class="repair-of-various-brands">
       <div class="show-hide-swiper-menu">
         <header class="small-header show-hide-swiper-menu__small-header">
           <h2 class="small-header__title">Ремонт техники различных брендов</h2>
         </header>
         <main>
           <div class="menu show-hide-swiper-menu__menu">
-            <div id='repair-of-various-brands__swiper'></div>
-              <div class="swiper-pagination menu__swiper-pagination"
-                id="repair-of-various-brands__swiper-pagination"></div>
+            <div id="repair-of-various-brands__swiper"></div>
+              <div class="swiper-pagination menu__swiper-pagination" id="repair-of-various-brands__swiper-pagination"></div>
           </div>
-          <button class="show-hide-button show-hide-swiper-menu__show-hide-button"
-            id='repair-of-various-brands__show-more'>
+          <button class="show-hide-button show-hide-swiper-menu__show-hide-button" id="repair-of-various-brands__show-more">
             <img class="show-hide-button__img" src="/img/show-icon.svg" alt="">
             <span class="show-hide-button__text">Показать ещё</span>
           </button>
@@ -180,12 +172,10 @@
         </header>
         <main>
           <div class="menu show-hide-swiper-menu__menu">
-            <div id='various-types-of-equipment__swiper'></div>
-              <div class="swiper-pagination menu__swiper-pagination"
-                id="various-types-of-equipment__swiper-pagination"></div>
+            <div id="various-types-of-equipment__swiper"></div>
+              <div class="swiper-pagination menu__swiper-pagination" id="various-types-of-equipment__swiper-pagination"></div>
           </div>
-          <button class="show-hide-button show-hide-swiper-menu__show-hide-button"
-            id='various-types-of-equipment__show-more'>
+          <button class="show-hide-button show-hide-swiper-menu__show-hide-button" id="various-types-of-equipment__show-more">
             <img class="show-hide-button__img" src="/img/show-icon.svg" alt="">
             <span class="show-hide-button__text">Показать ещё</span>
           </button>
@@ -198,11 +188,9 @@
           <h2 class="small-header__title">Цены на услуги</h2>
         </header>
         <main>
-          <div class="menu show-hide-swiper-menu__menu
-            show-hide-swiper-menu__menu--height--auto">
-            <div id='service-prices__swiper'></div>
-              <div class="swiper-pagination menu__swiper-pagination"
-                id="service-prices__swiper-pagination"></div>
+          <div class="menu show-hide-swiper-menu__menu show-hide-swiper-menu__menu--height--auto">
+            <div id="service-prices__swiper"></div>
+              <div class="swiper-pagination menu__swiper-pagination" id="service-prices__swiper-pagination"></div>
           </div>
         </main>
       </div>
@@ -240,15 +228,10 @@
       <h2 class="title__h2">Обратная связь</h2>
     </div>
     <form action="" method="post" class="form modal__form">
-      <input type="text" name="" id="" placeholder="Имя"
-        class="input-text form__input-text">
-      <input type="tel" name="" id="" placeholder="Телефон"
-        class="input-text form__input-text">
-      <input type="email" name="" id="" placeholder="Электронная почта"
-        class="input-text form__input-text">
-      <textarea name="" id="" placeholder="Сообщение" rows="5"
-        class="input-text input-text--hidden input-text--textarea
-        form__input-text"></textarea>
+      <input type="text" name="" id="" placeholder="Имя" class="input-text form__input-text">
+      <input type="tel" name="" id="" placeholder="Телефон" class="input-text form__input-text">
+      <input type="email" name="" id="" placeholder="Электронная почта" class="input-text form__input-text">
+      <textarea name="" id="" placeholder="Сообщение" rows="5" class="input-text input-text--hidden input-text--textarea form__input-text"></textarea>
       <p class="pressing-send modal__pressing-send">
         Нажимая "отправить", вы даёте согласие на
         <a href="#" class="link">обработку персональных данных</a>
@@ -270,8 +253,7 @@
       <h2 class="title__h2">Заказать звонок</h2>
     </div>
     <form action="" method="post" class="form modal__form">
-      <input type="tel" name="" id="" placeholder="Телефон"
-        class="input-text form__input-text">
+      <input type="tel" name="" id="" placeholder="Телефон" class="input-text form__input-text">
       <p class="pressing-send modal__pressing-send">
         Нажимая "отправить", вы даёте согласие на
         <a href="#" class="link">обработку персональных данных</a>
@@ -285,5 +267,5 @@
     </form>
   </section>
   <div class="fog-of-war"></div>
-</body>
+<script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
