@@ -78,13 +78,13 @@ module.exports = {
 
     // Кладем стили в отдельный файлик
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: 'css/style.css',
     }),
 
     new CopyWebpackPlugin([
       {
-        from: './src/img/favicon.ico',
-        to: 'favicon.ico',
+        from: './src/favicon',
+        to: 'favicon',
       },
     ]),
 
