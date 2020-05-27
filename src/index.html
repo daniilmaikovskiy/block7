@@ -52,10 +52,10 @@
     </main>
     <footer class="footer side-menu__footer">
       <div class="contacts footer__contacts">
-        <button class="button-icon">
+        <button class="button-icon" id="side-menu__call">
           <img src="img/call.svg" alt="Позвонить" class="button-icon__img">
         </button>
-        <button class="button-icon">
+        <button class="button-icon" id="side-menu__chat">
           <img src="img/chat.svg" alt="Чат" class="button-icon__img">
         </button>
         <button class="button-icon">
@@ -85,10 +85,10 @@
         <div class="divider header__divider"></div>
         <img src="/img/logo.svg" alt="CPS" class="header__logo">
         <div class="contacts header__contacts">
-          <button class="button-icon contacts__button-icon">
+          <button class="button-icon contacts__button-icon" id="main__call">
             <img src="/img/call.svg" alt="Заказать звонок" class="button-icon__img">
           </button>
-          <button class="button-icon contacts__button-icon">
+          <button class="button-icon contacts__button-icon" id="main__chat">
             <img src="/img/chat.svg" alt="Обратная связь" class="button-icon__img">
           </button>
           <button class="button-icon contacts__button-icon">
@@ -231,8 +231,8 @@
       </p>
     </footer>
   </main>
-  <section class="modal my-site__feedback">
-    <button class="button-icon modal__button-icon">
+  <section class="modal my-site__modal" id="chat">
+    <button class="button-icon modal__button-icon" id="chat__close-button">
       <img src="/img/burger-close.svg" alt="Закрыть" class="button-icon__img">
     </button>
     <div class="title modal__title">
@@ -247,18 +247,20 @@
       <input type="email" name="" id="" placeholder="Электронная почта"
         class="input-text form__input-text">
       <textarea name="" id="" placeholder="Сообщение" rows="5"
-        class="input-text input-text--textarea form__input-text"></textarea>
-      <p class="pressing-send">
+        class="input-text input-text--hidden input-text--textarea
+        form__input-text"></textarea>
+      <p class="pressing-send modal__pressing-send">
         Нажимая "отправить", вы даёте согласие на
         <a href="#" class="link">обработку персональных данных</a>
         и соглашаетесь с нашей
         <a href="#" class="link">политикой конфиденциальности</a>
       </p>
-      <button class="button-arrow form__button-arrow">
+      <button class="button-arrow form__button-arrow button-arrow--hidden">
         <p class="button-arrow__text">Отправить</p>
         <img src="/img/button-arrow__img.svg" alt="" class="button-arrow__img">
       </button>
     </form>
   </section>
+  <div class="fog-of-war"></div>
 </body>
 </html>

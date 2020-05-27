@@ -247,7 +247,7 @@ export const VARIOUS_TYPES_OF_EQUIPMENT = {
     showHideMethod: showHideOverflow,
   },
 };
-// don't work
+
 const SECTION_4_NAME = 'service-prices';
 export const SERVICE_PRICES = {
   swiperSettings: {

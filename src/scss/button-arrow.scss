@@ -22,4 +22,8 @@
   &:hover, &:focus {
     filter: hue-rotate(180deg) brightness(1.5);
   }
+
+  &--hidden {
+    display: none;
+  }
 }

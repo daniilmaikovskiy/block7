@@ -5,14 +5,54 @@
   width: 0;
   height: 100%;
   background-color: #fff; /* value */
+  opacity: 0;
+  transition: all 0.5s ease;
   z-index: 18000;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px rgba(69, 79, 126, 0.02);
 
   &__button-icon {
+    display: none;
     margin-top: 24px;
     margin-left: 16px;
     margin-bottom: 32px;
+
+    @media (min-width: $small-screen) {
+      margin: 0;
+      position: absolute;
+      top: 32px;
+      left: -72px;
+    }
   }
   &__form {
+    display: none;
     padding: 16px;
+  }
+  &__title {
+    display: none;
+    margin-top: 32px;
+  }
+  &__pressing-send {
+    display: none;
+  }
+
+  &--active {
+    width: 100%;
+    right: 0;
+    opacity: 1;
+
+    @media (min-width: $small-screen) {
+      width: 320px;
+    }
+  }
+
+  &--active &__pressing-send {
+    display: block;
+  }
+
+  &--active &__button-icon,
+  &--active &__form,
+  &--active &__title {
+    display: flex;
   }
 }
