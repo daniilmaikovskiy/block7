@@ -8,7 +8,7 @@
   &--service-prices {
     @media (min-width: $small-screen) {
       display: grid;
-      background: #fff;
+      background: $swiper-wrapper--service-prices--background-color;
       border-radius: 6px;
     }
   }

@@ -7,7 +7,7 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
-    color: #1B1C21; /* value */
+    color: $note__text--color;
     padding-bottom: 16px;
   }
   &__button {
@@ -21,7 +21,7 @@
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.2px;
-    color: #1B1C21; /* value */
+    color: $note__button-text--color;
   }
   &__button-img {
     margin-left: 8px;

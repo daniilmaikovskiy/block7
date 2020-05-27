@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   height: 32px;
-  background: #FF3E79; /* value */
+  background: $button-arrow--background-color;
   border-radius: 16px;
   transition: all 0.4s ease;
 
@@ -16,7 +16,7 @@
     line-height: 24px;
     letter-spacing: -0.15px;
     text-transform: uppercase;
-    color: #FFFFFF; /* value */
+    color: $button-arrow__text--color;
   }
 
   &:hover, &:focus {

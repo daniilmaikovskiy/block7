@@ -5,7 +5,7 @@
   height: 160px;
 
   &__text {
-    color: #1B1C21; /* value */
+    color: $equipment-button__text--color; /* value */
     font-weight: 500;
     position: absolute;
     top: 16px;

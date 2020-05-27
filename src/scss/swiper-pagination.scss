@@ -1,16 +1,16 @@
 .swiper-pagination {
   position: static;
   margin-top: 16px;
-}
 
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  margin-right: 8px;
-  opacity: 1;
-  background-color: #DDDDDD; /* value */
-}
+  &-bullet {
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    opacity: 1;
+    background-color: $swiper-pagination__bullet--background-color;
 
-.swiper-pagination-bullet-active {
-  background-color: #B5B6BC; /* value */
+    &-active {
+      background-color: $swiper-pagination__bullet--active--background-color;
+    }
+  }
 }

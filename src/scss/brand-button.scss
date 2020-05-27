@@ -6,8 +6,8 @@
   justify-content: space-between;
   width: 240px;
   height: 72px;
-  border: 1px solid #EAEAEA; /* value */
-  background: #fff; /* value */
+  border: 1px solid $brand-button--border-color; /* value */
+  background: $brand-button--background-color; /* value */
 
   &__img {
     margin-left: 16px;

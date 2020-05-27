@@ -1,13 +1,13 @@
 .service-block {
   position: relative;
-  background: #fff; /* value */
+  background: $service-block--background-color;
   width: 260px;
   height: 200px;
   padding: 16px;
   border-radius: 6px;
 
   &__title {
-    color: #7E7E82; /* value */
+    color: $service-block__title--color;
     opacity: 0.72;
     font-size: 14px;
     font-weight: normal;
@@ -22,7 +22,7 @@
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    color: #1B1C21; /* value */
+    color: $service-block__text--color;
   }
   &__text-block {
     margin-bottom: 16px;

@@ -3,8 +3,8 @@
   align-items: center;
   padding: 0 16px;
   height: 80px;
-  background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
-  box-shadow: 0 -2px 0 0 #D9FFF5;
+  background: $small-header--background;
+  box-shadow: 0 -2px 0 0 $small-header--box-shadow-color;
 
   &__title {
     font-size: 16px;
@@ -12,6 +12,6 @@
     letter-spacing: -0.2px;
     text-transform: uppercase;
     font-weight: normal;
-    color: #7E7E82; /* variables */
+    color: $small-header__title--color;
   }
 }
