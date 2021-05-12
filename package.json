@@ -44,6 +44,6 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "swiper": "^5.4.0"
+    "swiper": "^6.5.1"
   }
 }
